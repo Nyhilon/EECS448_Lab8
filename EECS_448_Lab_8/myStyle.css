@@ -1,0 +1,17 @@
+p
+{
+ font-family: arial;
+ font-size: 22pt;
+ color: white;
+}
+p:hover
+{
+ background-image: url(aku.gif);
+ background-size: 25%;
+ background-repeat: repeat;
+ color: yellow;
+}
+body
+{
+  background-color: grey;
+}

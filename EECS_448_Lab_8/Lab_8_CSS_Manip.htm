@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<body>
+  <p id= "boptions">Border Text Options: <br>
+    Colors are RGB, fields will accept integers between 0-255 <br>
+    Red: <input type="text" placeholder="Red..." id="bred"><br>
+    Blue: <input type="text" placeholder="Blue..." id="bblue"><br>
+    Green: <input type="text" placeholder="Green..." id="bgreen"><br>
+    Width: <input type="text" placeholder="Width..." id="width">
+  </p>
+  <p id="bgoptions">Background Options: <br>
+    Colors are RGB, fields will accept integers between 0-255 <br>
+    Red: <input type="text" placeholder="Red..." id="bgred"><br>
+    Blue: <input type="text" placeholder="Blue..." id="bgblue"><br>
+    Green: <input type="text" placeholder="Green..." id="bggreen"><br>
+  </p>
+  <button onlick= "applyChanges()">Apply Changes to Text</button>
+
+<p id= "dummy">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis. Et odio pellentesque diam volutpat commodo. Rhoncus aenean vel elit scelerisque mauris. Quam quisque id diam vel quam elementum pulvinar. Tristique senectus et netus et malesuada fames ac. Id interdum velit laoreet id donec ultrices. Sem integer vitae justo eget. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Proin fermentum leo vel orci porta non pulvinar. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Senectus et netus et malesuada fames ac turpis egestas.
+
+Pellentesque sit amet porttitor eget dolor morbi non. Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Enim eu turpis egestas pretium. Nisi est sit amet facilisis magna etiam. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Augue mauris augue neque gravida in. Sed enim ut sem viverra aliquet. Amet purus gravida quis blandit. Orci nulla pellentesque dignissim enim sit. Luctus venenatis lectus magna fringilla urna. Venenatis cras sed felis eget velit aliquet sagittis id. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Ultricies tristique nulla aliquet enim tortor at.
+
+Venenatis a condimentum vitae sapien pellentesque habitant morbi. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Mi sit amet mauris commodo quis. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Risus quis varius quam quisque id. Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Sed viverra ipsum nunc aliquet bibendum. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Sit amet nisl purus in mollis nunc sed id. Volutpat est velit egestas dui id ornare arcu odio.
+
+Sed felis eget velit aliquet sagittis id consectetur. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Facilisis mauris sit amet massa. Sit amet commodo nulla facilisi nullam. Turpis massa tincidunt dui ut ornare lectus sit amet. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Quis vel eros donec ac odio tempor. Proin fermentum leo vel orci porta non pulvinar. Blandit libero volutpat sed cras ornare. Nisi scelerisque eu ultrices vitae auctor. In iaculis nunc sed augue lacus viverra. Sed viverra ipsum nunc aliquet bibendum. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Ut venenatis tellus in metus vulputate eu scelerisque.
+
+Scelerisque felis imperdiet proin fermentum. Felis eget nunc lobortis mattis aliquam faucibus purus in massa. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Tincidunt lobortis feugiat vivamus at. Lacus vestibulum sed arcu non. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Ante in nibh mauris cursus mattis. Faucibus nisl tincidunt eget nullam non nisi. A arcu cursus vitae congue mauris rhoncus aenean vel. Fringilla urna porttitor rhoncus dolor purus non enim. Purus sit amet volutpat consequat. Nunc id cursus metus aliquam eleifend mi in nulla. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. A arcu cursus vitae congue mauris rhoncus aenean. Purus viverra accumsan in nisl nisi scelerisque eu. Aliquam faucibus purus in massa tempor. Id faucibus nisl tincidunt eget nullam non nisi est sit. Diam quam nulla porttitor massa id neque. Elementum nisi quis eleifend quam adipiscing vitae proin.
+</p>
+<script>
+function applyChanges()
+{
+  var text= document.getElementById("dummy");
+  //border options
+  var bred= document.getElementById("bred").value;
+  var bblue= document.getElementById("bblue").value;
+  var bgreen= document.getElementById("bgreen").value;
+
+  if(bred > 0 && bred < 256)
+  {
+    text.style.border= "rgb(" + bred + "," + 0 + "," + 0 + ")";
+  }
+}
+</script>
+
+</body>
+</html>
